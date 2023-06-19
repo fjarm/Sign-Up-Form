@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+
+:root {
+    --text-color: #080a0c
+    --bg-color: #f3f4f7
+    --primary-button-color: #001e03
+    --secondary-button-color: #e7e1ea
+    --accent-color: #1b151e
+}
