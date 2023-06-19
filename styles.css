@@ -56,3 +56,21 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+body {
+    display: flex;
+}
+
+img {
+    height: 800px;
+    overflow: hidden;
+}
+
+.left-side-bar {
+    background-image: url(img/rat.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    width:45vw;
+    height:100vh;
+}
