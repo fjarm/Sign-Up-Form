@@ -82,3 +82,32 @@ h1 {
     background-color: gray;
     text-align: center;
 }
+
+.right-side-bar {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.heading, .bottom {
+    height: 35vh;
+    box-sizing: border-box;
+}
+
+.sign-up-area {
+    height: 30vh
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    padding: 17.5vh 20vw 0 0;
+    gap: 20px;
+}
+
+h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 30px;
+}
