@@ -120,6 +120,19 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    flex-wrap: wrap;
+    background-color: #301d2b;
+}
+
+.form-row {
+    display: flex;
+    max-width: 30%;
+    flex-wrap: wrap;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
 }
 
 @media only screen and (max-width: 700px) {
