@@ -48,14 +48,15 @@
                 <div class="form-row">
                     <div class="form-item">
                         <label for="password">Password</label>
-                        <input id="password" name="password" placeholder="*******" type="text" required />
+                        <input id="password" name="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" placeholder="********" type="text" required />
                     </div>
 
                     <div class="form-item">
                         <label for="password-confirm">Confirm Password</label>
-                        <input id="password-confirm" name="password-confirm" placeholder="*******" type="text" required />
+                        <input id="password-confirm" name="password-confirm" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" placeholder="********" type="text" required />
                     </div>
                 </div>
+                <h3>Password must contain a mix of Upper/Lowercase, at least one number and special character, and minimum 8 characters.</h3>
                 <div class="form-row">
                     <button>Submit</button>
                 </div>

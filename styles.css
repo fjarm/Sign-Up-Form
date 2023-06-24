@@ -100,6 +100,12 @@ h2 {
     font-size: 1.5em;
 }
 
+h3 {
+    font-size: 0.8em;
+    margin: 5px 0 40px 0;
+
+}
+
 .heading {
     display: flex;
     flex-direction: column;
@@ -128,7 +134,7 @@ h2 {
     max-width: 100%;
     display: flex;
     gap: 50px;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .form-item {
@@ -158,7 +164,7 @@ h2 {
 }
 
 .form-item input[type='text']:invalid:not(:placeholder-shown),
-.form-item input[type='email']:invalid:not(:placeholder-shown){
+.form-item input[type='email']:invalid:not(:placeholder-shown) {
     border: 3px solid red;
     background-color: #ffd0d0;
 } 
