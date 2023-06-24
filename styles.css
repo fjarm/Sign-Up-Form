@@ -139,13 +139,47 @@ h2 {
     margin-bottom: 5px;
 }
 
-.form-item input[type='text'] {
+.form-item input[type='text'],
+.form-item input[type='email'] {
     border: 2px solid var(--primary-button-color);
     border-radius: 5px;
     padding: 7px;
     font-size: 20px;
     width: 100%;
     box-sizing: border-box;
+}
+
+.form-item input[type='text']:focus,
+.form-item input[type='email']:focus {
+    box-shadow: none;
+}
+
+.form-item input[type='text']:invalid,
+.form-item input[type='email']:invalid {
+    border: 3px solid red;
+    background-color: #ffd0d0;
+    box-shadow: none;
+}
+
+.form-row button {
+    font-size: 20px;
+    font-weight: bold;
+
+    background-color: #ff00a8;
+
+    border: none;
+    border-radius: 3px;
+
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.form-row button:hover {
+    background-color: #ff58c7;
+}
+
+.form-row button:active {
+    background-color: #ac0072;
 }
 
 @media only screen and (max-width: 825px) {
