@@ -2,6 +2,8 @@
     --text-color: #fdfbfe;
     --bg-color: #040104;
     --primary-button-color: #ff00a8;
+    --primary-button-hover: #ff58c7;
+    --primary-button-active: #ac0072;
     --secondary-button-color: #000000;
     --accent-color: #1e0b0c;
 }
@@ -165,7 +167,7 @@ h2 {
     font-size: 20px;
     font-weight: bold;
 
-    background-color: #ff00a8;
+    background-color: var(--primary-button-color);
 
     border: none;
     border-radius: 3px;
@@ -175,11 +177,24 @@ h2 {
 }
 
 .form-row button:hover {
-    background-color: #ff58c7;
+    background-color: var(--primary-button-hover);
 }
 
 .form-row button:active {
-    background-color: #ac0072;
+    background-color: var(--primary-button-active);
+}
+
+a {
+    color: var(--primary-button-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-button-hover);
+}
+
+a:active {
+    color: var(--primary-button-active);
 }
 
 @media only screen and (max-width: 825px) {
