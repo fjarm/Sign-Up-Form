@@ -170,7 +170,8 @@ h4 {
 }
 
 .form-item input[type='text'],
-.form-item input[type='email'] {
+.form-item input[type='email'],
+.form-item input[type='password'] {
     border-radius: 5px;
     padding: 7px;
     font-size: 20px;
@@ -180,19 +181,22 @@ h4 {
 }
 
 .form-item input[type='text']:focus,
-.form-item input[type='email']:focus {
+.form-item input[type='email']:focus,
+.form-item input[type='password']:focus {
     box-shadow: none;
     border: 2px solid var(--primary-button-color);
 }
 
 .form-item input[type='text']:invalid:not(:placeholder-shown),
-.form-item input[type='email']:invalid:not(:placeholder-shown) {
+.form-item input[type='email']:invalid:not(:placeholder-shown),
+.form-item input[type='password']:invalid:not(:placeholder-shown) {
     border: 3px solid red;
     background-color: #ffd0d0;
 } 
 
 .form-item input[type='text']:valid,
-.form-item input[type='email']:valid{
+.form-item input[type='email']:valid,
+.form-item input[type='password']:valid{
     border: 3px solid rgb(136, 255, 0);
     background-color: #d6ffd0;
 } 
