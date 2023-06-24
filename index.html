@@ -48,17 +48,17 @@
                 <div class="form-row">
                     <div class="form-item">
                         <label for="password">Password</label>
-                        <input id="password" name="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" placeholder="********" type="text" required />
+                        <input id="password" name="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" placeholder="********" type="text" onchange="check_pass();" required />
                     </div>
 
                     <div class="form-item">
                         <label for="password-confirm">Confirm Password</label>
-                        <input id="password-confirm" name="password-confirm" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" placeholder="********" type="text" required />
+                        <input id="password-confirm" name="password-confirm" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" placeholder="********" type="text" onchange="check_pass();" required />
                     </div>
                 </div>
                 <h3>Password must contain a mix of Upper/Lowercase, at least one number and special character, and minimum 8 characters.</h3>
                 <div class="form-row">
-                    <button>Submit</button>
+                    <button id="submit">Submit</button>
                 </div>
             </form>
         </div>
@@ -73,5 +73,15 @@
             <h4>Photo by <a href="https://unsplash.com/@clemono?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clem Onojeghuo</a> on <a href="https://unsplash.com/photos/xZRcXgLrEsU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></h4>
         </div>
     </div>
+    <script>
+        function check_pass() {
+            if (document.getElementById('password').value ==
+            document.getElementById('password-confirm').value) {
+                document.getElementById('submit').disabled = false;
+            } else {
+                document.getElementById('submit').disabled = true;
+            }
+        }
+    </script>
 </body>
 </html>
