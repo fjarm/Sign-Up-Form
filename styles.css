@@ -157,11 +157,16 @@ h2 {
     border: 2px solid var(--primary-button-color);
 }
 
-.form-item input[type='text']:invalid:focus,
-.form-item input[type='email']:invalid:focus{
+.form-item input[type='text']:invalid:not(:placeholder-shown),
+.form-item input[type='email']:invalid:not(:placeholder-shown){
     border: 3px solid red;
     background-color: #ffd0d0;
-    box-shadow: none;
+} 
+
+.form-item input[type='text']:valid,
+.form-item input[type='email']:valid{
+    border: 3px solid rgb(136, 255, 0);
+    background-color: #d6ffd0;
 } 
 
 .form-row button {
