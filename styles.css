@@ -143,25 +143,26 @@ h2 {
 
 .form-item input[type='text'],
 .form-item input[type='email'] {
-    border: 2px solid var(--primary-button-color);
     border-radius: 5px;
     padding: 7px;
     font-size: 20px;
     width: 100%;
     box-sizing: border-box;
+    box-shadow: none;
 }
 
 .form-item input[type='text']:focus,
 .form-item input[type='email']:focus {
     box-shadow: none;
+    border: 2px solid var(--primary-button-color);
 }
 
-.form-item input[type='text']:invalid,
-.form-item input[type='email']:invalid {
+.form-item input[type='text']:invalid:focus,
+.form-item input[type='email']:invalid:focus{
     border: 3px solid red;
     background-color: #ffd0d0;
     box-shadow: none;
-}
+} 
 
 .form-row button {
     font-size: 20px;
