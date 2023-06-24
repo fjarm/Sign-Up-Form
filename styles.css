@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
-
 :root {
     --text-color: #fdfbfe;
     --bg-color: #040104;
@@ -104,7 +102,7 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
 }
 
 .text-background {
@@ -116,6 +114,12 @@ h2 {
     align-items: center;
     margin-top: 80vh;
     gap:5px;
+}
+
+.sign-up-area {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 @media only screen and (max-width: 700px) {
