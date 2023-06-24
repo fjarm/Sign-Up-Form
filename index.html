@@ -48,15 +48,15 @@
                 <div class="form-row">
                     <div class="form-item">
                         <label for="password">Password</label>
-                        <input id="password" name="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" placeholder="********" type="password" onchange="check_pass();" required />
+                        <input id="password" name="password" pattern="(?=^.{8,}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" placeholder="********" type="password" onchange="check_pass();" required />
                     </div>
 
                     <div class="form-item">
                         <label for="password-confirm">Confirm Password</label>
-                        <input id="password-confirm" name="password-confirm" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" placeholder="********" type="password" onchange="check_pass();" required />
+                        <input id="password-confirm" name="password-confirm" pattern="(?=^.{8,}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" placeholder="********" type="password" onkeyup="check_pass();" required />
                     </div>
                 </div>
-                <h3>Password must contain a mix of Upper/Lowercase, at least one number and special character, and minimum 8 characters.</h3>
+                <h3>Password must contain a mix of Upper/Lowercase, at least one number, and minimum 8 characters.</h3>
                 <div class="form-row">
                     <button id="submit">Submit</button>
                 </div>
@@ -78,8 +78,12 @@
             if (document.getElementById('password').value ==
             document.getElementById('password-confirm').value) {
                 document.getElementById('submit').disabled = false;
+                document.getElementById('password-confirm').style.border = "3px solid rgb(136, 255, 0)"
+                document.getElementById('password-confirm').style.backgroundColor = "#d6ffd0"
             } else {
                 document.getElementById('submit').disabled = true;
+                document.getElementById('password-confirm').style.border = "3px solid red"
+                document.getElementById('password-confirm').style.backgroundColor = "#ffd0d0"
             }
         }
     </script>
